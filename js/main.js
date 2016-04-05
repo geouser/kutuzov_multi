@@ -91,15 +91,6 @@ $(function() { // add class on scroll
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> f348454f67857aca2c45ec6a39c516c6fb641442
-=======
-  
->>>>>>> f348454f67857aca2c45ec6a39c516c6fb641442
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
