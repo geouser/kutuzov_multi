@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
       //sectionsColor : ['#ccc', '#fff'],
       paddingTop: '0',
       paddingBottom: '0',
-      //fixedElements: '#header, .footer',
+      fixedElements: 'header, .footer',
       responsiveWidth: 0,
       responsiveHeight: 0,
 
@@ -71,6 +71,8 @@ jQuery(document).ready(function($) {
       afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
+
+  
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
