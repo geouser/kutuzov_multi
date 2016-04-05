@@ -92,7 +92,11 @@ $(function() { // add class on scroll
   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f348454f67857aca2c45ec6a39c516c6fb641442
 =======
   
 >>>>>>> f348454f67857aca2c45ec6a39c516c6fb641442
