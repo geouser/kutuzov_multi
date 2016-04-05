@@ -13,6 +13,25 @@ window.params = {
 
 jQuery(document).ready(function($) {
 
+  $('.menu-button').on('click', function(ev) {
+  ev.preventDefault();
+  $(this).toggleClass('active');
+  $(this).siblings('nav').toggleClass('active');
+});
+
+
+$(function() { // add class on scroll
+  var $document = $(document),
+      $element = $('.menu-button'),
+      $element2 = $('header'),
+      className = 'hasScrolled';
+
+  $document.scroll(function() {
+    $element.toggleClass(className, $document.scrollTop() >= 20);
+    $element2.toggleClass(className, $document.scrollTop() >= 1);
+  });
+});
+
   $('.fullpage').fullpage({
       //Navigation
       //menu: '#menu',
@@ -71,6 +90,8 @@ jQuery(document).ready(function($) {
       afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
+
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
@@ -93,6 +114,8 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $.magnificPopup.close();
   });
+
+
 
 });
 
