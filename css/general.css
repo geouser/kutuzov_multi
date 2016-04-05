@@ -243,6 +243,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
+  height: 90px;
 }
 
 nav {border-top: 2px solid rgba(255,255,255, .05);
@@ -263,7 +264,7 @@ nav li a {font: 17px 'GaramondPremrPro-LtDisp'; position: relative; color: rgba(
 nav li a:hover {border-bottom: 1px solid #fff; color: #FFF;}
 
 nav li a:hover:after {opacity: 1;}
-.headerLogo {border: 1px solid #fff; display: inline-block; padding: 4px 10px 4px; margin-right: 9%; color: #FFF; font: 25px 'GaramondPremrPro';}
+.headerLogo {border: 1px solid #fff; display: inline-block; padding: 6px 10px 4px; margin-right: 9%; color: #FFF; font: 25px 'GaramondPremrPro';}
 .tel {font: 25px 'GaramondPremrPro'; color: #FFF; margin-left: 7%;}
 
 nav li a.active {
@@ -341,6 +342,7 @@ nav li a.active:after {
 
 
 @media (max-width: 1300px) {
+    header                      { height: auto;}
     .menu-button                {    position: fixed;
                                      top: 20px;
                                      right: 20px;
@@ -389,6 +391,20 @@ nav li a.active:after {
 
 }
 
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; 
+  top: 90px;
+}
+.logo img {width: 100%;}
 
+@media (max-width: 1600px) {
+    .logo {width: 200px;}
+}
+@media (max-width: 1300px) {
+    .logo {top: 0; position: static; display: block; margin: 0 auto;}
+}
 
 /*---------------------------------------------------------------*/
