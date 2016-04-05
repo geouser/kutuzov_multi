@@ -149,6 +149,10 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
    -------------------------------------- */
 header {
   background-color: rgba(49, 58, 77, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 nav {border-top: 2px solid rgba(255,255,255, .05);
