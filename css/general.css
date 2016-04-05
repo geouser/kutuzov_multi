@@ -315,9 +315,9 @@ nav li a.active:after {
     height: 5px; 
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    margin-top: 6px;
     width: 100%;
     position: absolute;
+    bottom: -10px;
 }
 nav li a.active:before {
     content: ""; 
@@ -325,7 +325,7 @@ nav li a.active:before {
     border-top: 1px solid #fff;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -7px;
 }
 
 @media (max-width: 1800px) {
@@ -339,6 +339,8 @@ nav li a.active:before {
     nav li:before {padding: 0 4px;}
   nav li a {font-size: 14px;}
   nav li a {padding: 7px 0;}
+  nav li a.active:after {bottom: -7px;}
+nav li a.active:before {bottom: -4px;}
 }
 
 @media (max-width: 1500px) {
