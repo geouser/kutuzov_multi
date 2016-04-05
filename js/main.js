@@ -74,7 +74,7 @@ $(function() { // add class on scroll
       //sectionsColor : ['#ccc', '#fff'],
       paddingTop: '0',
       paddingBottom: '0',
-      //fixedElements: '#header, .footer',
+      fixedElements: 'header, .footer',
       responsiveWidth: 0,
       responsiveHeight: 0,
 
@@ -91,7 +91,11 @@ $(function() { // add class on scroll
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> f348454f67857aca2c45ec6a39c516c6fb641442
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
