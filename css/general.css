@@ -109,7 +109,14 @@ ul                            {    padding: 0;}
                                    clear: both;}
 
 a[href^=tel]                  {     color:inherit !important; text-decoration:none;}
-
+section {
+  position: relative;
+  text-align: center;
+  padding-bottom: 110px!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 .wrapper                      {    margin: 0 auto;
                                    text-align: center;
                                    width: 1200px;}
@@ -144,6 +151,88 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 .flex:before,
 .flex:after                     {  display: none;}
 
+
+.scroll_down {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #3c4556;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -28px;
+  opacity: .5;
+  transition: all 0.3s ease;
+}
+.scroll_down:hover {
+  opacity: 1;
+}
+.scroll_down:after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-left: 1px solid #3c4556;
+  border-bottom: 1px solid #3c4556;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -9px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.align_bottom .fp-tableCell {
+  vertical-align: bottom;
+}
+
+.section_title {
+  font-family: 'GaramondPremrPro';
+  font-size: 40px;
+  color: #3c4556;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 40px;
+  display: inline-block;
+  width: 100%;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+.section_subtitle {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  color: #333333;
+  font-size: 26px;
+  font-family: 'GaramondPremrPro-LtDisp';
+  line-height: 26px;
+  padding: 25px 20px 28px;
+  margin: 25px 0 16px;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+.section_subtitle:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-top: 3px solid #BA8B54;
+  border-bottom: 1px solid #BA8B54;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+}
+.section_subtitle:after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-bottom: 3px solid #BA8B54;
+  border-top: 1px solid #BA8B54;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
 /* --------------------------------------
    Custom Styles
    -------------------------------------- */
