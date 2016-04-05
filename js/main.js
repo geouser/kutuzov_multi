@@ -74,7 +74,7 @@ $(function() { // add class on scroll
       //sectionsColor : ['#ccc', '#fff'],
       paddingTop: '0',
       paddingBottom: '0',
-      fixedElements: 'header, .footer',
+      //fixedElements: 'header, .footer',
       responsiveWidth: 0,
       responsiveHeight: 0,
 
