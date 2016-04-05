@@ -349,6 +349,7 @@ nav li a.active:before {bottom: -4px;}
 @media (max-width: 1300px) {
   .tel {margin-left: 0;}
   .headerLogo {margin-right: 0%;}
+  nav li a {font-size: 15px;}
 }
 @media (max-height: 500px) {
   nav li a {padding: 5px 0;}
