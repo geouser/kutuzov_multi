@@ -165,12 +165,12 @@ margin: 0;
 }
 nav li:before {content: " | "; color: rgba(255,255,255, .5); margin-left: 4px; padding: 0 10px;}
 nav li:first-of-type:before {content: none;}
-nav li a {font: 17px "MyriadProRegular"; position: relative; color: rgba(255,255,255, .5); display: inline-block; padding: 10px 0; border-bottom: 1px solid transparent; text-transform: uppercase;}
+nav li a {font: 17px 'GaramondPremrPro-LtDisp'; position: relative; color: rgba(255,255,255, .5); display: inline-block; padding: 10px 0; border-bottom: 1px solid transparent; text-transform: uppercase;}
 nav li a:hover {border-bottom: 1px solid #fff; color: #FFF;}
 
 nav li a:hover:after {opacity: 1;}
-.headerLogo {border: 1px solid #fff; display: inline-block; padding: 4px 10px 4px; margin-right: 9%; color: #FFF;}
-.tel {font-size: 25px; color: #FFF; margin-left: 7%;}
+.headerLogo {border: 1px solid #fff; display: inline-block; padding: 4px 10px 4px; margin-right: 9%; color: #FFF; font: 25px 'GaramondPremrPro';}
+.tel {font: 25px 'GaramondPremrPro'; color: #FFF; margin-left: 7%;}
 
 nav li a.active {
     color: #FFF;
@@ -179,12 +179,12 @@ nav li a.active {
 nav li a.active:after {
     content: ""; 
     display: block; 
-    height: 1px; background-color: rgba(255,255,255, .95);
+    height: 1px; background-color: #fff;
     margin-top: 6px;
     width: 100%;
     position: absolute;
-    -webkit-box-shadow: 0.1px 2px 0 0.2px #fff, 0.1px -2px 0 0.2px #fff;
-            box-shadow: 0.1px 2px 0 0.2px #fff, 0.1px -2px 0 0.2px #fff;
+    -webkit-box-shadow: 0.1px 2px 0 0.1px #fff, 0.1px -2px 0 0.1px #fff;
+            box-shadow: 0.1px 2px 0 0.1px #fff, 0.1px -2px 0 0.1px #fff;
 }
 
 @media (max-width: 1800px) {
