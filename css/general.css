@@ -187,7 +187,7 @@ section {
 .align_bottom .fp-tableCell {
   vertical-align: bottom;
 }
-
+ 
 .section_title {
   font-family: 'GaramondPremrPro';
   font-size: 40px;
@@ -232,6 +232,44 @@ section {
   left: 0;
   right: 0;
   top: 100%;
+}
+@media (max-width: 1300px) {
+  .section_title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .section_subtitle {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section_title {
+    max-width: 90%;
+  }
+  .section_subtitle {
+    max-width: 90%;
+  }
+  .section_title br,
+  .section_subtitle br {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .section_title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .section_subtitle{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px 10px;
+    margin-bottom: 8px;
+  }
 }
 /* --------------------------------------
    Custom Styles
