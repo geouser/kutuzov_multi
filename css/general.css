@@ -163,6 +163,7 @@ section {
   margin-left: -28px;
   opacity: .5;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 .scroll_down:hover {
   opacity: 1;
@@ -199,6 +200,19 @@ section {
   width: 100%;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 }
+.section_title-main {
+    font-size: 35px;
+}
+.section_title-main:before {
+    content: "";
+    display: block;
+    margin: 0 auto 15px;
+    width: 520px;
+    height: 40px;
+    background-image: url("../images/title-main.png");
+    background-size: 100% 100%;
+}
+
 .section_subtitle {
   position: relative;
   display: inline-block;
@@ -233,16 +247,28 @@ section {
   right: 0;
   top: 100%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .section_title {
     font-size: 35px;
     line-height: 35px;
+  }
+  .section_title-main {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1300px) {
+  .section_title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+.section_title-main {
+    font-size: 30px;
   }
   .section_subtitle {
     font-size: 22px;
     line-height: 22px;
     padding: 20px 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -479,8 +505,8 @@ nav li a.active:before      {    content: "";
     .logo {top: 0; position: static; display: block; margin: 0 auto;}
 }
 
-.offerSlider {width: 100%;}
-.offerSlider_slide,
+.offerSlider {width: 100%; position: relative; z-index: 2;}
+.offerSlider_slide {height: auto;}
 .offerSlider .slick-list,
 .offerSlider .slick-track {width: 100%; height: 100%;}
 

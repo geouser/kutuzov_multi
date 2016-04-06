@@ -116,7 +116,8 @@ $(function() { // add class on scroll
 
 $('.offerSlider').slick({
   dots: false,
-  arrows: false
+  arrows: false,
+  adaptiveHeight: true
 });
 
 });
