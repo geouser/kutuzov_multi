@@ -479,7 +479,7 @@ nav li a.active:before      {    content: "";
     .logo {top: 0; position: static; display: block; margin: 0 auto;}
 }
 
-.offerSlider,
+.offerSlider {width: 100%;}
 .offerSlider_slide,
 .offerSlider .slick-list,
 .offerSlider .slick-track {width: 100%; height: 100%;}

@@ -114,12 +114,10 @@ $(function() { // add class on scroll
     $.magnificPopup.close();
   });
 
-
-$('.ofeerSlider').slick({
+$('.offerSlider').slick({
   dots: false,
   arrows: false
 });
-
 
 });
 
