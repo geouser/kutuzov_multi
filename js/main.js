@@ -115,6 +115,11 @@ $(function() { // add class on scroll
   });
 
 
+$('.ofeerSlider').slick({
+  dots: false,
+  arrows: false
+});
+
 
 });
 
