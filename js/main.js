@@ -10,6 +10,10 @@ window.params = {
 #   Main JS for ____________   #
 #############################
 */
+if (window.params.isMobile) {
+  $('body').addClass('mobile');
+}
+
 
 jQuery(document).ready(function($) {
 
@@ -32,64 +36,67 @@ $(function() { // add class on scroll
   });
 });
 
-  $('.fullpage').fullpage({
-      //Navigation
-      //menu: '#menu',
-      lockAnchors: false,
-      //anchors:['firstPage', 'secondPage'],
-      navigation: false,
-      navigationPosition: 'right',
-      //navigationTooltips: ['firstSlide', 'secondSlide'],
-      showActiveTooltip: false,
-      slidesNavigation: true,
-      slidesNavPosition: 'bottom',
 
-      //Scrolling
-      css3: true,
-      scrollingSpeed: 700,
-      autoScrolling: true,
-      fitToSection: true,
-      fitToSectionDelay: 1000,
-      scrollBar: false,
-      easing: 'easeInOutCubic',
-      easingcss3: 'ease',
-      loopBottom: false,
-      loopTop: false,
-      loopHorizontal: true,
-      continuousVertical: false,
-      //normalScrollElements: '#element1, .element2',
-      scrollOverflow: false,
-      touchSensitivity: 15,
-      normalScrollElementTouchThreshold: 5,
+  if (!window.params.isMobile) {
+    $('.fullpage').fullpage({
+        //Navigation
+        //menu: '#menu',
+        lockAnchors: false,
+        //anchors:['firstPage', 'secondPage'],
+        navigation: false,
+        navigationPosition: 'right',
+        //navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
 
-      //Accessibility
-      keyboardScrolling: true,
-      animateAnchor: true,
-      recordHistory: true,
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        //normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
 
-      //Design
-      controlArrows: true,
-      verticalCentered: true,
-      resize : false,
-      //sectionsColor : ['#ccc', '#fff'],
-      paddingTop: '0',
-      paddingBottom: '0',
-      //fixedElements: 'header, .footer',
-      responsiveWidth: 0,
-      responsiveHeight: 0,
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
 
-      //Custom selectors
-      sectionSelector: 'section',
-      slideSelector: '.fp-slide',
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        resize : false,
+        //sectionsColor : ['#ccc', '#fff'],
+        paddingTop: '0',
+        paddingBottom: '0',
+        //fixedElements: 'header, .footer',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
 
-      //events
-      onLeave: function(index, nextIndex, direction){},
-      afterLoad: function(anchorLink, index){},
-      afterRender: function(){},
-      afterResize: function(){},
-      afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-      onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-  });
+        //Custom selectors
+        sectionSelector: 'section',
+        slideSelector: '.fp-slide',
+
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    });
+  }
 
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
