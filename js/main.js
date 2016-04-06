@@ -121,7 +121,11 @@ $(function() { // add class on scroll
     $.magnificPopup.close();
   });
 
-
+$('.offerSlider').slick({
+  dots: false,
+  arrows: false,
+  adaptiveHeight: true
+});
 
 });
 
