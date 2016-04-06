@@ -283,6 +283,11 @@ section {
   .section_subtitle br {
     display: none;
   }
+  .section_title-main:before {
+    width: 270px;
+    height: 20px;
+}
+
 }
 
 @media (max-width: 500px) {
@@ -502,9 +507,11 @@ nav li a.active:before      {    content: "";
     .logo {width: 200px;}
 }
 @media (max-width: 1300px) {
-    .logo {top: 0; position: static; display: block; margin: 0 auto;}
+    .logo {top: 0; display: block; margin: 0 auto;}
 }
-
+@media (max-width: 600px) {
+   .logo {width: 160px;}
+}
 .offerSlider {width: 100%; position: relative; z-index: 2;}
 .offerSlider_slide {height: auto;}
 .offerSlider .slick-list,
