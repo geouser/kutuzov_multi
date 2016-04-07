@@ -587,8 +587,8 @@ nav li a.active:after       {    content: "";
 
 @media (max-width: 1600px) {
     .logo {width: 200px;}
-    .fp-viewing-11 .fullpage--about .logo {
-    width: 130px;
+    .fp-viewing-11.about .logo {
+    width: 120px;
   }
 }
 @media (max-width: 1300px) {
@@ -663,7 +663,7 @@ nav li a.active:after       {    content: "";
   }
 }
 .text_content {
-  width: 50%;
+  width: 950px;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
