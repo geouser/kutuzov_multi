@@ -207,11 +207,11 @@ section {box-shadow: 0px 0px 60px 15px rgba(49, 58, 77, 1) inset; }
   line-height: 40px;
   display: inline-block;
   width: 100%;
-  text-shadow:
+  /*text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-     1px 1px 0 #fff;
+     1px 1px 0 #fff;*/
 }
 .section_title-main {
     font-size: 35px;
@@ -236,7 +236,7 @@ section {box-shadow: 0px 0px 60px 15px rgba(49, 58, 77, 1) inset; }
   line-height: 26px;
   padding: 25px 20px 28px;
   margin: 25px 0 16px;
-  text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+  /*text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);*/
 }
 .section_subtitle:before {
   content: '';
