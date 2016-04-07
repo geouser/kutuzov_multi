@@ -616,3 +616,46 @@ nav li a.active:after       {    content: "";
   width: 20%;
   height: auto;
 }
+@media (max-width: 1400px) {
+  .photo_preview {
+    bottom: 25px;
+    right: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .photo_preview {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+  .fullpage--about section:after {
+    background-size: 1920px auto;
+  }
+}
+@media (max-width: 500px) {
+  .photo_preview {
+    margin-top: 15px;
+  }
+}
+
+
+
+
+
+body.mobile {
+  overflow: scroll!important;
+}
+.mobile section {
+  padding-top: 400px;
+}
+@media (max-width: 1600px) {
+  .mobile section {
+    padding-top: 350px;
+  }
+}
+@media (max-width: 1300px) {
+  .mobile section {
+    padding-top: 250px;
+  }
+}
