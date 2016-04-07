@@ -102,6 +102,11 @@ $(function() { // add class on scroll
     });
   }
 
+
+$(document).on('click', '.scroll_down', function(){
+  $.fn.fullpage.moveSectionDown();
+});
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
