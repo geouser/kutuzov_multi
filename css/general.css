@@ -43,48 +43,60 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
     font-weight: normal;
     font-style: normal;
 }
+
+
+
 @font-face {
-  font-family: 'GaramondPremrPro-SmbdIt';
-  src: url('../fonts/GaramondPremrPro-SmbdIt.woff') format('woff'),
-       url('../fonts/Garamond-Premier-Pro-Semibold-Italic_19591.woff2') format('woff2'),
-       url('../fonts/Garamond-Premier-Pro-Semibold-Italic_19591.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/GaramondPremrPro-SmbdIt.ttf') format('truetype'),
-       url('../fonts/GaramondPremrPro-SmbdIt.svg#GaramondPremrPro-SmbdIt') format('svg');
-  font-weight: normal;
+  font-family:'GaramondPremrPro';
+  src: url('../fonts/GaramondPremrPro_gdi.eot');
+  src: url('../fonts/GaramondPremrPro_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GaramondPremrPro_gdi.woff') format('woff'),
+    url('../fonts/GaramondPremrPro_gdi.ttf') format('truetype'),
+    url('../fonts/GaramondPremrPro_gdi.svg#GaramondPremrPro-Regular') format('svg');
+  font-weight: 400;
   font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
 }
+
+@font-face {
+  font-family:'GaramondPremrPro-LtDisp';
+  src: url('../fonts/GaramondPremrPro-LtDisp_gdi.eot');
+  src: url('../fonts/GaramondPremrPro-LtDisp_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GaramondPremrPro-LtDisp_gdi.woff') format('woff'),
+    url('../fonts/GaramondPremrPro-LtDisp_gdi.ttf') format('truetype'),
+    url('../fonts/GaramondPremrPro-LtDisp_gdi.svg#GaramondPremrPro-LtDisp') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
 @font-face {
   font-family: 'GaramondPremrPro-Smbd';
-  src: url('../fonts/GaramondPremrPro-Smbd.woff') format('woff'),
-       url('../fonts/GaramondPremrPro-Smbd.ttf') format('truetype'),
-       url('../fonts/GaramondPremrPro-Smbd.svg#GaramondPremrPro-Smbd') format('svg'),
-       url('../fonts/Garamond-Premier-Pro-Semibold_19593.woff2') format('woff2'),
-       url('../fonts/Garamond-Premier-Pro-Semibold_19593.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
+  src: url('../fonts/GaramondPremrPro-Smbd_gdi.eot');
+  src: url('../fonts/GaramondPremrPro-Smbd_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GaramondPremrPro-Smbd_gdi.woff') format('woff'),
+    url('../fonts/GaramondPremrPro-Smbd_gdi.ttf') format('truetype'),
+    url('../fonts/GaramondPremrPro-Smbd_gdi.svg#GaramondPremrPro-Smbd') format('svg');
+  font-weight: 600;
   font-style: normal;
-}
-@font-face {
-  font-family: 'GaramondPremrPro-LtDisp';
-  src: url('../fonts/GaramondPremrPro-LtDisp.woff') format('woff'),
-       url('../fonts/GaramondPremrPro-LtDisp.ttf') format('truetype'),
-       url('../fonts/GaramondPremrPro-LtDisp.svg#GaramondPremrPro-LtDisp') format('svg'),
-       url('../fonts/Garamond-Premier-Pro-Light-Display_19576.woff2') format('woff2'),
-       url('../fonts/Garamond-Premier-Pro-Light-Display_19576.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'GaramondPremrPro';
-  src: url('../fonts/GaramondPremrPro.woff') format('woff'),
-       url('../fonts/GaramondPremrPro.ttf') format('truetype'),
-       url('../fonts/GaramondPremrPro.svg#GaramondPremrPro') format('svg'),
-       url('../fonts/Garamond-Premier-Pro_19595.woff2') format('woff2'),
-       url('../fonts/Garamond-Premier-Pro_19595.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
 }
 
-
+@font-face {
+  font-family:'GaramondPremrPro-SmbdIt';
+  src: url('../fonts/GaramondPremrPro-SmbdIt_gdi.eot');
+  src: url('../fonts/GaramondPremrPro-SmbdIt_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GaramondPremrPro-SmbdIt_gdi.woff') format('woff'),
+    url('../fonts/GaramondPremrPro-SmbdIt_gdi.ttf') format('truetype'),
+    url('../fonts/GaramondPremrPro-SmbdIt_gdi.svg#GaramondPremrPro-SmbdIt') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
 
 /*General styles*/
 html, body                    {    height: 100%;}
