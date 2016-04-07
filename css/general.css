@@ -418,7 +418,7 @@ nav li a                    {    font: 17px 'GaramondPremrPro-LtDisp';
                                  position: relative;
                                  color: rgba(255,255,255, .5);
                                  display: inline-block;
-                                 padding: 10px 0;
+                                 padding: 4px 0;
                                  border-bottom: 1px solid transparent;
                                  text-transform: uppercase;
                             }
@@ -434,7 +434,7 @@ nav li a.active:after       {    content: "";
                                  height: 5px;
                                  width: 100%;
                                  position: absolute;
-                                 bottom: -10px;
+                                 bottom: -5px;
                                  background-image: url("../images/lines.png");
                                  -webkit-background-size: 95% 100%;
                                       -o-background-size: 95% 100%;
@@ -466,10 +466,8 @@ nav li a.active:after       {    content: "";
     .headerLogo           {    margin-right: 4% }
     nav li:before         {    padding: 0 4px }
     nav li a              {    font-size: 14px }
-    nav li a              {    padding: 7px 0 }
-    nav li a.active:after {    bottom: -7px }
-    nav li a.active:before
-                          {    bottom: -4px }
+    nav li a              {    padding: 2px 0 }
+    nav li a.active:after {    bottom: -4px }
 }
 @media (max-width: 1500px)    { 
     .tel                  {    font-size: 20px }
