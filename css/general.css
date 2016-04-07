@@ -589,12 +589,19 @@ nav li a.active:after       {    content: "";
 }
 .logo img {width: 100%;}
 
+@media (max-height: 1000px) {
+    .logo {width: 200px;}
+    .fp-viewing-11.about .logo {
+    width: 120px;
+  }
+} 
 @media (max-width: 1600px) {
     .logo {width: 200px;}
     .fp-viewing-11.about .logo {
     width: 120px;
   }
 }
+
 @media (max-width: 1300px) {
     .logo {top: 0; display: block; margin: 0 auto;}
 }
@@ -666,8 +673,10 @@ nav li a.active:after       {    content: "";
     margin-top: 15px;
   }
 }
+.content .wrapper {
+  width: 980px;
+}
 .text_content {
-  width: 950px;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
@@ -679,20 +688,75 @@ nav li a.active:after       {    content: "";
   text-align: left;
 }
 
-
-
+.content h3 {
+  color: #3C4556;
+  font: 24px/28px 'GaramondPremrPro-Smbd';
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 50%;
+  position: relative;
+}
+.content h3:before {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 44px;
+  background-image: url('../images/h3_before.png');
+  background-size: 100% 100%;
+  position: absolute; left: -45px;
+top: -10px;
+}
+.text_content  p {
+  color: #333;
+  font: 22px/26px 'GaramondPremrPro-LtDisp';
+  margin-bottom: 24px;
+}
+.text_content .section_subtitle {
+    color: #3C4556;
+  font: 22px/26px 'GaramondPremrPro';
+  font-weight: 700;
+  padding: 15px 0;
+  margin: 5px 0 40px;
+}
 
 
 .mobile section {
   padding-top: 400px;
 }
+
+
 @media (max-width: 1600px) {
   .mobile section {
-    padding-top: 350px;
-  }
+    padding-top: 350px;}
+  .content .wrapper {width: 800px;}
+  .content h3 {
+  font: 22px/26px 'GaramondPremrPro-Smbd';
+  margin-bottom: 15px;}
+.text_content  p {
+  font: 19px/23px 'GaramondPremrPro-LtDisp';
+  margin-bottom: 10px;}
+.text_content .section_subtitle {
+  font: 20px/24px 'GaramondPremrPro';}
+.text_content {
+  -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 20px; /* Firefox */
+  column-gap: 20px;}
+.text_content .section_subtitle { padding: 10px 0;   margin: 5px 0 20px;}
 }
+
 @media (max-width: 1300px) {
   .mobile section {
     padding-top: 250px;
   }
+}
+
+@media (max-width: 900px) {
+  .content h3  {width: 100%;}.content h3:before {display: none;}
+    .content .wrapper {width: 90%;}
+    .text_content {
+  -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+}
 }
