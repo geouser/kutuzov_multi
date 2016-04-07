@@ -288,22 +288,28 @@ section {box-shadow: 0px 0px 60px 15px rgba(49, 58, 77, 1) inset; }
             background-size: 100% 100%;
 }
 
-.addInfo img,
-.property img {
-  width: 100%;
-}
+
+
+
 .addInfo {
   width: 250px; position: fixed;
   top: 145px; left: 25px;
   z-index: 10;
+  -webkit-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
 }
 .property {
   width: 185px;
   position: fixed;
   top: 140px; right: 65px;
   z-index: 10;
+    -webkit-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
 }
-
+.addInfo:hover,
+.property:hover {opacity: .8;}
 @media (max-width: 1500px) {
 .addInfo  {
   width: 175px;
@@ -434,7 +440,7 @@ nav li a.active:after       {    content: "";
                                  height: 5px;
                                  width: 100%;
                                  position: absolute;
-                                 bottom: -5px;
+                                 bottom: -5xpx;
                                  background-image: url("../images/lines.png");
                                  -webkit-background-size: 95% 100%;
                                       -o-background-size: 95% 100%;
