@@ -17,6 +17,8 @@ if (window.params.isMobile) {
 
 jQuery(document).ready(function($) {
 
+$('.addInfo, .property').css('opacity', '1')
+
   $('.menu-button').on('click', function(ev) {
   ev.preventDefault();
   $(this).toggleClass('active');
@@ -99,6 +101,11 @@ $(function() { // add class on scroll
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
   }
+
+
+$(document).on('click', '.scroll_down', function(){
+  $.fn.fullpage.moveSectionDown();
+});
 
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({

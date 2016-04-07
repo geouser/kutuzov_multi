@@ -231,6 +231,8 @@ section {box-shadow: 0px 0px 60px 15px rgba(49, 58, 77, 1) inset; }
 }
 .section_title-main {
     font-size: 35px;
+    position: relative;
+    z-index: 2;
 }
 .section_title-main:before {
     content: "";
@@ -292,21 +294,25 @@ section {box-shadow: 0px 0px 60px 15px rgba(49, 58, 77, 1) inset; }
             background-size: 100% 100%;
 }
 
-.addInfo img,
-.property img {
-  width: 100%;
-}
 .addInfo {
   width: 250px; position: fixed;
   top: 145px; left: 25px;
   z-index: 10;
+  -webkit-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
 }
 .property {
   width: 185px;
   position: fixed;
   top: 140px; right: 65px;
   z-index: 10;
+    -webkit-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
 }
+.addInfo:hover,
+.property:hover {opacity: .8 !important;}
 
 @media (max-width: 1500px) {
 .addInfo  {
@@ -422,7 +428,7 @@ nav li a                    {    font: 17px 'GaramondPremrPro-LtDisp';
                                  position: relative;
                                  color: rgba(255,255,255, .5);
                                  display: inline-block;
-                                 padding: 10px 0;
+                                 padding: 4px 0;
                                  border-bottom: 1px solid transparent;
                                  text-transform: uppercase;
                             }
@@ -438,7 +444,7 @@ nav li a.active:after       {    content: "";
                                  height: 5px;
                                  width: 100%;
                                  position: absolute;
-                                 bottom: -10px;
+                                 bottom: -5xpx;
                                  background-image: url("../images/lines.png");
                                  -webkit-background-size: 95% 100%;
                                       -o-background-size: 95% 100%;
@@ -470,10 +476,8 @@ nav li a.active:after       {    content: "";
     .headerLogo           {    margin-right: 4% }
     nav li:before         {    padding: 0 4px }
     nav li a              {    font-size: 14px }
-    nav li a              {    padding: 7px 0 }
-    nav li a.active:after {    bottom: -7px }
-    nav li a.active:before
-                          {    bottom: -4px }
+    nav li a              {    padding: 2px 0 }
+    nav li a.active:after {    bottom: -4px }
 }
 @media (max-width: 1500px)    { 
     .tel                  {    font-size: 20px }
