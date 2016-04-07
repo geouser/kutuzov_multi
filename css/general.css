@@ -594,7 +594,7 @@ nav li a.active:after       {    content: "";
   position: relative;
   z-index: 1;
 }
-.fullpage--about section:after {
+.fullpage--about section:not(.no-shadow):after {
   content: '';
   width: 100%;
   position: absolute;
