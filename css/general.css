@@ -303,6 +303,16 @@ section {box-shadow: 0px 0px 60px 15px rgba(49, 58, 77, 1) inset; }
           background-size: 100% 100%;
 }
 
+@media (max-width: 1500px) {
+.fp-tableCell:before {
+  width: 175px;
+  height: 87px; 
+}
+.fp-tableCell:after {
+  width: 130px;
+  height: 130px; 
+}
+}
 
 @media (max-width: 1500px) {
   .section_title {
@@ -408,18 +418,13 @@ nav li a.active             {    color: #FFF;
 nav li a.active:after       {    content: "";
                                  display: block;
                                  height: 5px;
-                                 border-top: 1px solid #fff;
-                                 border-bottom: 1px solid #fff;
                                  width: 100%;
                                  position: absolute;
                                  bottom: -10px;
-                            }
-nav li a.active:before      {    content: "";
-                                 display: block;
-                                 border-top: 1px solid #fff;
-                                 width: 100%;
-                                 position: absolute;
-                                 bottom: -7px;
+                                 background-image: url("../images/lines.png");
+                                 -webkit-background-size: 95% 100%;
+                                      -o-background-size: 95% 100%;
+                                         background-size: 95% 100%;
                             }
 
 
