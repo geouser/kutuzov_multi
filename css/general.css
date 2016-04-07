@@ -98,6 +98,14 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
   unicode-range: U+0020-25CA;
 }
 
+* {
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}
+
 /*General styles*/
 html, body                    {    height: 100%;}
 body                          {    margin: 0;
@@ -383,9 +391,7 @@ section {
 
 
 /*Main page sections backgrounds */
-.main .fullpage section:nth-child(1){
-  background-image: url(../images/main_screen.jpg);
-}
+
 .main .fullpage section:nth-child(2){
   background-image: url(../images/main_2.jpg);
 }
@@ -398,9 +404,7 @@ section {
 
 
 /*About page sections backgrounds */
-.about .fullpage section:nth-child(1) {
-  background-image: url(../images/main_screen.jpg);
-}
+
 .about .fullpage section:nth-child(2){
   background-image: url(../images/about_2.jpg);
 }
