@@ -38,7 +38,7 @@ $(function() { // add class on scroll
 
 
   if (!window.params.isMobile) {
-    $('.fullpage').fullpage({
+    /*$('.fullpage').fullpage({
         //Navigation
         //menu: '#menu',
         lockAnchors: false,
@@ -95,7 +95,7 @@ $(function() { // add class on scroll
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-    });
+    });*/
   }
 
 /*-----------------------------------------------------------------*/  
