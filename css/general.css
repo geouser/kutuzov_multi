@@ -557,3 +557,21 @@ nav li a.active:before      {    content: "";
                                  align-items: bottom;
 }
 /*---------------------------------------------------------------*/
+.fullpage--about section {
+  position: relative;
+  z-index: 1;
+}
+.fullpage--about section:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  background-image: url(../images/about_shadow.png);
+  background-size: 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
