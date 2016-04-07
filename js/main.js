@@ -38,6 +38,8 @@ $(function() { // add class on scroll
 
 
   if (!window.params.isMobile) {
+    $('body').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css">');
+
     $('.fullpage').fullpage({
         //Navigation
         //menu: '#menu',

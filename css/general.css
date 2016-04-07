@@ -630,7 +630,7 @@ nav li a.active:after       {    content: "";
     width: 300px;
   }
   .fullpage--about section:after {
-    background-size: 1920px auto;
+    background-size: auto 80%;
   }
 }
 @media (max-width: 500px) {
@@ -643,9 +643,7 @@ nav li a.active:after       {    content: "";
 
 
 
-body.mobile {
-  overflow: scroll!important;
-}
+
 .mobile section {
   padding-top: 400px;
 }
