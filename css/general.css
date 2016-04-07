@@ -603,3 +603,11 @@ nav li a.active:before      {    content: "";
   background-repeat: no-repeat;
   z-index: -1;
 }
+.photo_preview {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  border: 5px solid rgba(255, 255, 255, .5);
+  width: 20%;
+  height: auto;
+}
