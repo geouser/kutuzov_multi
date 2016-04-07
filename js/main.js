@@ -56,10 +56,10 @@ $(function() { // add class on scroll
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 1500,
         autoScrolling: true,
         fitToSection: true,
-        fitToSectionDelay: 1000,
+        fitToSectionDelay: 0,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -100,12 +100,13 @@ $(function() { // add class on scroll
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+    $(document).on('click', '.scroll_down', function(){
+      $.fn.fullpage.moveSectionDown();
+    });
   }
 
 
-$(document).on('click', '.scroll_down', function(){
-  $.fn.fullpage.moveSectionDown();
-});
+
 
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
