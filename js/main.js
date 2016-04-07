@@ -17,6 +17,8 @@ if (window.params.isMobile) {
 
 jQuery(document).ready(function($) {
 
+$('.addInfo, .property').css('opacity', '1')
+
   $('.menu-button').on('click', function(ev) {
   ev.preventDefault();
   $(this).toggleClass('active');
