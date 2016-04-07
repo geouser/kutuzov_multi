@@ -505,7 +505,7 @@ nav li a.active:after       {    content: "";
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1310px) {
     header                      {    height: auto;}
     .menu-button                {    position: fixed;
                                      top: 20px;
