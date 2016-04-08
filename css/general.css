@@ -744,14 +744,16 @@ nav li a.active:after       {    content: "";
 @media (max-height: 1000px) {
     .logo {width: 200px;}
     .fp-viewing-11.about .logo,
-    .fp-viewing-3.main .logo {
+    .fp-viewing-3.main .logo,
+    .fp-viewing-1.history .logo {
     width: 120px;
   }
 } 
 @media (max-width: 1600px) {
   .logo {width: 200px;}
   .fp-viewing-11.about .logo,
-  .fp-viewing-3.main .logo {
+  .fp-viewing-3.main .logo,
+  .fp-viewing-1.history .logo {
     width: 120px;
   }
 }
@@ -819,6 +821,11 @@ top: -10px;
   font: 22px/26px 'GaramondPremrPro-LtDisp';
   margin-bottom: 24px;
 }
+.text_content img {
+  max-width: 100%;
+  margin: 0 0 20px 0;
+  border: 5px solid #D5BA99;
+}
 .text_content .section_subtitle {
     color: #3C4556;
   font: 22px/26px 'GaramondPremrPro';
@@ -840,7 +847,7 @@ top: -10px;
   .content h3 {
   font: 22px/26px 'GaramondPremrPro-Smbd';
   margin-bottom: 15px;}
-.text_content  p {
+.text_content p {
   font: 19px/23px 'GaramondPremrPro-LtDisp';
   margin-bottom: 10px;}
 .text_content .section_subtitle {
@@ -989,6 +996,11 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .engel_volkers {
   margin-bottom: 90px;
   display: inline-block;
+  opacity: .5;
+  transition: all 0.3s ease;
+}
+.engel_volkers:hover {
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
