@@ -871,6 +871,9 @@ top: -10px;
 /*Contacts page*/
 .contacts section {
   padding: 0!important;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .contacts .sidebar {
   width: 700px;
@@ -878,4 +881,134 @@ top: -10px;
   background-image: url(../images/contacts_sidebar.png);
   background-size: cover;
   background-position: 0 50%;
+  padding: 90px 0 0 70px;
+  overflow-y: scroll;
+}
+.contacts .sidebar .sidebar_logo {
+  width: 180px;
+  display: inline-block;
+  margin-bottom: 56px;
+}
+.contacts .sidebar .sidebar_logo img {
+  width: 100%;
+}
+.contacts .sidebar form {
+  display: block;
+  width: 320px;
+  margin: 32px auto 70px auto;
+}
+.contacts .sidebar form  h3 {
+  font-size: 23px;
+  font-family: 'GaramondPremrPro-Smbd';
+  margin-bottom: 15px;
+}
+.contacts .sidebar form input {
+  width: 48.5%;
+  height: 38px;
+  border: 1px solid #000;
+  background-color: transparent;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'GaramondPremrPro-LtDisp';
+  font-size: 22px;
+  color: #000;
+}
+.contacts .sidebar form textarea {
+  width: 100%;
+  height: 65px;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding-top: 5px;
+  text-align: center;
+  font-family: 'GaramondPremrPro-LtDisp';
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+input::-webkit-input-placeholder {color:#000; opacity: 1;}
+input::-moz-placeholder          {color:#000; opacity: 1;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#000; opacity: 1;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#000; opacity: 1;}
+textarea::-webkit-input-placeholder {color:#000; opacity: 1;}
+textarea::-moz-placeholder          {color:#000; opacity: 1;}/* Firefox 19+ */
+textarea:-moz-placeholder           {color:#000; opacity: 1;}/* Firefox 18- */
+textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
+
+.contacts .sidebar form button {
+  width: 190px;
+  height: 42px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #BF8B4F;
+  color: #fff;
+  font-family: 'GaramondPremrPro-LtDisp';
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+.contacts .sidebar form button:hover {
+  background-color: #AC8D68;
+}
+
+
+.address__location {
+  font-family: 'GaramondPremrPro-Smbd';
+  font-size: 18px;
+  font-style: normal;
+}
+.address__location:before {
+  content: '';
+  height: 20px;
+  width: 14px;
+  background-image: url(../images/pin.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.address__phone {
+  font-family: 'GaramondPremrPro-LtDisp';
+  font-size: 40px;
+  font-style: normal;
+  color: #000;
+  margin-top: 3px;
+}
+.address__phone:before {
+  content: '';
+  height: 18px;
+  width: 18px;
+  background-image: url(../images/phone.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.engel_volkers {
+  margin-bottom: 90px;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .contacts section {
+      background-image: none!important;
+  }
+  .contacts .sidebar {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    background-size: 140%;
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .contacts .sidebar {
+    padding: 0 10px;
+  }
+  .contacts .sidebar form {
+    width: 300px;
+  }
 }
