@@ -98,13 +98,13 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
   unicode-range: U+0020-25CA;
 }
 
-* {
+/** {
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
       -ms-transition: all .2s;
        -o-transition: all .2s;
           transition: all .2s;
-}
+}*/
 
 /*General styles*/
 html, body                    {    height: 100%;}
@@ -371,10 +371,7 @@ section {
 }
 @media (max-width: 1000px) {
   .photo_preview {
-    position: static;
-    display: block;
-    margin: 0 auto;
-    width: 300px;
+    display: none;
   }
   .fullpage--about section:after {
     background-size: auto 80%;
@@ -1003,6 +1000,12 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   opacity: 1;
 }
 
+@media (max-width: 1310px) {
+  .contacts .sidebar { 
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 800px) {
   .contacts section {
       background-image: none!important;
@@ -1010,6 +1013,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   .contacts .sidebar {
     width: 100%;
     padding-top: 0;
+    float: none;
     padding-left: 0;
     background-size: 140%;
     background-position: 100% 50%;
@@ -1023,4 +1027,169 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   .contacts .sidebar form {
     width: 300px;
   }
+}
+
+
+/*Infrastucture page*/
+.navigation a {
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 5px solid rgba(255, 255, 255, .5)
+}
+.navigation a span {
+  display: block;
+  background-color: rgba(60, 69, 86, 0.8);
+  color: #fff;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  font-family: 'GaramondPremrPro';
+}
+.navigation a:nth-child(1) {
+  display: inline-block;
+  left: 40px;
+  top: 40%;
+  margin-top: -125px;
+  background-image: url(../images/navigation_1.jpg);
+}
+.navigation a:nth-child(2) {
+  display: inline-block;
+  left: 50%;
+  top: 40%;
+  margin-top: -125px;
+  margin-left: -200px;
+  background-image: url(../images/navigation_2.jpg);
+}
+.navigation a:nth-child(3) {
+  display: inline-block;
+  right: 40px;
+  top: 40%;
+  margin-top: -125px;
+  background-image: url(../images/navigation_3.jpg);
+}
+.navigation a:nth-child(4) {
+  display: inline-block;
+  left: 40px;
+  bottom: 40px;
+  background-image: url(../images/navigation_4.jpg);
+}
+.navigation a:nth-child(5) {
+  display: inline-block;
+  right: 40px;
+  bottom: 40px;
+  background-image: url(../images/navigation_5.jpg);
+}
+
+@media (max-width: 1600px) {
+  .navigation a span {
+    font-size: 18px;
+  }
+  .navigation a {
+    width: 300px;
+    height: 185px;
+  }
+  .navigation a:nth-child(1) {
+    display: inline-block;
+    left: 20px;
+    top: 35%;
+    margin-top: -92px;
+    background-image: url(../images/navigation_1.jpg);
+  }
+  .navigation a:nth-child(2) {
+    display: inline-block;
+    left: 50%;
+    top: 35%;
+    margin-top: -92px;
+    margin-left: -150px;
+    background-image: url(../images/navigation_2.jpg);
+  }
+  .navigation a:nth-child(3) {
+    display: inline-block;
+    right: 20px;
+    top: 35%;
+    margin-top: -92px;
+    background-image: url(../images/navigation_3.jpg);
+  }
+  .navigation a:nth-child(4) {
+    display: inline-block;
+    left: 20px;
+    bottom: 20px;
+    background-image: url(../images/navigation_4.jpg);
+  }
+  .navigation a:nth-child(5) {
+    display: inline-block;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(../images/navigation_5.jpg);
+  }
+}
+
+
+.mobile .navigation a {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin-top: 0;
+  margin-left: 0;
+  margin: 10px;
+}
+.mobile .fullpage--about section {
+  padding-top: 100px;
+  min-height: 100%;
+  vertical-align: bottom;
+  display: table;
+  width: 100%;
+  padding-bottom: 50px!important;
+  z-index: 1;
+}
+.mobile .fullpage--about section:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .5);
+  z-index: -1;
+}
+.mobile .fullpage--about section .cell {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.mobile section .cell {
+  height: 100%;
+}
+.mobile .fullpage--about section.content .cell {
+  vertical-align: middle;
+}
+.mobile .scroll_down {
+  display: none;
+}
+.mobile .addInfo {
+  display: none;
+}
+.mobile .fullpage--about {
+  height: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+.mobile .fullpage--about section:after {
+  background-size: 250% 75%;
+}
+.mobile .logo {
+  width: 100px;
+}
+.mobile .property {
+  display: none;
 }

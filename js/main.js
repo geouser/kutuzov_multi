@@ -12,6 +12,11 @@ window.params = {
 */
 if (window.params.isMobile) {
   $('body').addClass('mobile');
+  $('section').each(function(index, el) {
+    var content = $(this).html();
+    content = '<div class="cell">'+content+'</div>';
+    $(this).html(content);
+  });
 }
 
 
