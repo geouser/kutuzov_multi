@@ -98,6 +98,7 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
   unicode-range: U+0020-25CA;
 }
 
+
 /** {
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
@@ -105,6 +106,7 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
        -o-transition: all .2s;
           transition: all .2s;
 }*/
+
 
 /*General styles*/
 html, body                    {    height: 100%;}
@@ -387,60 +389,6 @@ section {
 }
 /*End general section styles*/
 
-
-
-
-
-
-
-/*Main page sections backgrounds */
-
-.main .fullpage section:nth-child(2){
-  background-image: url(../images/main_2.jpg);
-}
-.main .fullpage section:nth-child(3){
-  background-image: url(../images/about_6.jpg);
-}
-.main .fullpage section:nth-child(4){
-  background-image: url(../images/about_12.jpg)
-}
-
-
-/*About page sections backgrounds */
-
-.about .fullpage section:nth-child(2){
-  background-image: url(../images/about_2.jpg);
-}
-.about .fullpage section:nth-child(3){
-  background-image: url(../images/about_3.jpg);
-}
-.about .fullpage section:nth-child(4){
-  background-image: url(../images/about_4.jpg);
-}
-.about .fullpage section:nth-child(5){
-  background-image: url(../images/about_5.jpg);
-}
-.about .fullpage section:nth-child(6){
-  background-image: url(../images/about_6.jpg);
-}
-.about .fullpage section:nth-child(7){
-  background-image: url(../images/about_7.jpg);
-}
-.about .fullpage section:nth-child(8){
-  background-image: url(../images/about_8.jpg);
-}
-.about .fullpage section:nth-child(9){
-  background-image: url(../images/about_9.jpg);
-}
-.about .fullpage section:nth-child(10){
-  background-image: url(../images/about_9.jpg);
-}
-.about .fullpage section:nth-child(11){
-  background-image: url(../images/about_11.jpg);
-}
-.about .fullpage section:nth-child(12){
-  background-image: url(../images/about_12.jpg);
-}
 
 
 /*Buttons*/
