@@ -42,70 +42,74 @@ $(function() { // add class on scroll
   if (!window.params.isMobile) {
     $('body').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css">');
 
-    $('.fullpage').fullpage({
-        //Navigation
-        //menu: '#menu',
-        lockAnchors: false,
-        //anchors:['firstPage', 'secondPage'],
-        navigation: false,
-        navigationPosition: 'right',
-        //navigationTooltips: ['firstSlide', 'secondSlide'],
-        showActiveTooltip: false,
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
+    if ( $('.fullpage').length > 0) {
+      $('.fullpage').fullpage({
+          //Navigation
+          //menu: '#menu',
+          lockAnchors: false,
+          //anchors:['firstPage', 'secondPage'],
+          navigation: false,
+          navigationPosition: 'right',
+          //navigationTooltips: ['firstSlide', 'secondSlide'],
+          showActiveTooltip: false,
+          slidesNavigation: true,
+          slidesNavPosition: 'bottom',
 
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        fitToSection: true,
-        fitToSectionDelay: 1000,
-        scrollBar: false,
-        easing: 'easeInOutCubic',
-        easingcss3: 'ease',
-        loopBottom: false,
-        loopTop: false,
-        loopHorizontal: true,
-        continuousVertical: false,
-        //normalScrollElements: '#element1, .element2',
-        scrollOverflow: false,
-        touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 5,
+          //Scrolling
+          css3: true,
+          scrollingSpeed: 1500,
+          autoScrolling: true,
+          fitToSection: true,
+          fitToSectionDelay: 0,
+          scrollBar: false,
+          easing: 'easeInOutCubic',
+          easingcss3: 'ease',
+          loopBottom: false,
+          loopTop: false,
+          loopHorizontal: true,
+          continuousVertical: false,
+          //normalScrollElements: '#element1, .element2',
+          scrollOverflow: false,
+          touchSensitivity: 15,
+          normalScrollElementTouchThreshold: 5,
 
-        //Accessibility
-        keyboardScrolling: true,
-        animateAnchor: true,
-        recordHistory: true,
+          //Accessibility
+          keyboardScrolling: true,
+          animateAnchor: true,
+          recordHistory: true,
 
-        //Design
-        controlArrows: true,
-        verticalCentered: true,
-        resize : false,
-        //sectionsColor : ['#ccc', '#fff'],
-        paddingTop: '0',
-        paddingBottom: '0',
-        //fixedElements: 'header, .footer',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
+          //Design
+          controlArrows: true,
+          verticalCentered: true,
+          resize : false,
+          //sectionsColor : ['#ccc', '#fff'],
+          paddingTop: '0',
+          paddingBottom: '0',
+          //fixedElements: 'header, .footer',
+          responsiveWidth: 0,
+          responsiveHeight: 0,
 
-        //Custom selectors
-        sectionSelector: 'section',
-        slideSelector: '.fp-slide',
+          //Custom selectors
+          sectionSelector: 'section',
+          slideSelector: '.fp-slide',
 
-        //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-    });
+          //events
+          onLeave: function(index, nextIndex, direction){},
+          afterLoad: function(anchorLink, index){},
+          afterRender: function(){},
+          afterResize: function(){},
+          afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+          onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+      });
+      $(document).on('click', '.scroll_down', function(){
+        $.fn.fullpage.moveSectionDown();
+      });
+    }
+    
   }
 
 
-$(document).on('click', '.scroll_down', function(){
-  $.fn.fullpage.moveSectionDown();
-});
+
 
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
