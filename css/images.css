@@ -46,3 +46,11 @@
 .about .fullpage section:nth-child(12){
   background-image: url(../images/about_12.jpg);
 }
+
+/*History page sections backgrounds */
+
+.history .fullpage section:nth-child(2){
+  background-image: url(../images/about_12.jpg);
+}
+
+/*Historical_flats page sections backgrounds */
