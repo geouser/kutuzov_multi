@@ -38,6 +38,13 @@ $('.houseSection, .floorSection, .flatSection').click(function(){
   $(this).next().addClass('current');
 });
 
+$('.flatSection').click(function(){
+  if($(this).hasClass('current')) {
+    $(this).removeClass('current');
+    $('.floorSection.data[' +  numberOfFloor + ']').addClass('current');
+  }
+});
+
 $('.addInfo, .property').css('opacity', '1')
 
   $('.menu-button').on('click', function(ev) {
