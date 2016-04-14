@@ -1144,6 +1144,24 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 
 
+/*house*/
+.houseMap {
+  position: relative;
+  overflow: hidden;
+}
+.houseMap svg {
+  width: 100%;
+  height: auto;
+}
+.houseMap svg .floor {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+}
+.houseMap svg .floor:hover {
+  opacity: 1;
+}
+
 /*flats*/
 #flatsPage section {
   padding-bottom: 0 !important;
@@ -1153,12 +1171,15 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   overflow: hidden;
   width: 100%;
   height: 100%;
+  background-image: url(../images/pergament.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .flatSectionWrap > div {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 400px;
   -webkit-transition: all .4s;
      -moz-transition: all .4s;
       -ms-transition: all .4s;
@@ -1168,7 +1189,6 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .houseSection {
   right: 100%;
   top: 0;
-  background-color: #ccc;
 }
 .flatSection {
   left: 100%;

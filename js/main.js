@@ -22,6 +22,17 @@ if (window.params.isMobile) {
 
 jQuery(document).ready(function($) {
 
+/*loading svg*/
+  $.ajax({
+      url : "images/house.svg",
+      dataType: "text",
+      success : function (data) {
+          $(".houseMap").html(data);
+      }
+  });
+
+
+
 $('.houseSection, .floorSection, .flatSection').click(function(){
   $(this).removeClass('current');
   $(this).next().addClass('current');
