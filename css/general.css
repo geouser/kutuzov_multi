@@ -147,7 +147,8 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 .pull-right {
   float: right;
 }
-.flex                         {   display: -webkit-box;
+.flex,
+.flex-centered-all                          {   display: -webkit-box;
                                   display: -moz-box;
                                   display: -ms-flexbox;
                                   display: -webkit-flex;
@@ -172,7 +173,15 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 .flex:after                     {  display: none;}
 
 
-
+.flex-centered-all {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+   align-content: center;
+}
 
 
 
@@ -1158,7 +1167,6 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 400px;
   -webkit-transition: all .4s;
      -moz-transition: all .4s;
       -ms-transition: all .4s;
@@ -1294,4 +1302,14 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 .floorNav span:hover {
   background-image: url("../images/floorNavBg.png");
+}
+
+
+
+.flatBlock {
+  width: 40%;
+  margin: auto;
+}
+.flatInfo, .flatInfo th {
+  text-align: left;
 }
