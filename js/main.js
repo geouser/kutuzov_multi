@@ -31,19 +31,44 @@ jQuery(document).ready(function($) {
       }
   });
 
+var houseSec = $('.houseSection, .flatSection, .floorSection');
 
-
-$('.houseSection, .floorSection, .flatSection').click(function(){
-  $(this).removeClass('current');
-  $(this).next().addClass('current');
+$(document).on('click', 'g.floor', function() {
+  $('.houseSection').removeClass('current');
+  var number = $(this).data('floor');
+  $('.floorSection[data-num="' + number + '"]').addClass('current');
+  $('.floorNav span').removeClass('active');
+  $('.floorNav span[data-floor="' + number + '"]').addClass('active');
 });
 
-$('.flatSection').click(function(){
-  if($(this).hasClass('current')) {
-    $(this).removeClass('current');
-    $('.floorSection.data[' +  numberOfFloor + ']').addClass('current');
-  }
+$(document).on('click', '.flatBlock', function() {
+  $(houseSec).removeClass('current');
+  $('.flatSection').addClass('current');
 });
+
+$('.floorNav span').click(function() {
+  $(houseSec).removeClass('current');
+  $('.floorNav span').removeClass('active');
+  $(this).addClass('active');
+  var number = $(this).data('floor');
+  $('.floorSection[data-num="' + number + '"]').addClass('current');
+});
+
+
+$('.backToHouse').click(function() {
+  $(houseSec).removeClass('current');
+  $('.houseSection').addClass('current');
+});
+
+$('.backToFloor').click(function() {
+  $(houseSec).removeClass('current');
+  var number = $(this).parent().data('num');
+  $('.floorSection[data-num="' + number + '"]').addClass('current');
+});
+
+
+
+
 
 $('.addInfo, .property').css('opacity', '1')
 
