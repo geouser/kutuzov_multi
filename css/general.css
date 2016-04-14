@@ -1153,6 +1153,24 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 
 
+/*house*/
+.houseMap {
+  position: relative;
+  overflow: hidden;
+}
+.houseMap svg {
+  width: 100%;
+  height: auto;
+}
+.houseMap svg .floor {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+}
+.houseMap svg .floor:hover {
+  opacity: 1;
+}
+
 /*flats*/
 #flatsPage section {
   padding-bottom: 0 !important;
@@ -1162,6 +1180,10 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   overflow: hidden;
   width: 100%;
   height: 100%;
+  background-image: url(../images/pergament.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .flatSectionWrap > div {
   position: absolute;
@@ -1302,6 +1324,27 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   background-image: url("../images/floorNavBg.png");
 }
 
+@media (max-width: 1500px) {
+.floorNav {
+  position: absolute;
+  left: 4.5%;
+  top: 125px;}
+.backTo {
+  width: 175px;
+  right: 6%;
+  top: 120px;
+  font-size: 16px;
+}
+.backTo img {
+  margin: 0px auto 15px;}
+.flatsNav {
+  left: 4.5%;
+  bottom: 55px;
+}
+}
+
+
+
 
 
 .flatBlock {
@@ -1344,4 +1387,15 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 .flatInfo tr td:nth-child(3) {
   font-style: italic;
+}
+
+@media (max-width: 1500px) {
+    .flatInfo tr td:nth-child(1) {
+    width: 70px;
+    }
+  .flatInfo tr td:nth-child(2) {
+    width: 100px;
+    }
+    .flatInfo tr td {font-size: 16px;}
+  .flatInfo thead td {font-size: 13px;}
 }
