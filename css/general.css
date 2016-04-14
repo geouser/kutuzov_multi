@@ -1244,7 +1244,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 
 .flatsNav {
-  position: absolute;
+  position: fixed;
   left: 8.5%;
   bottom: 55px;
   width: 310px;
@@ -1284,7 +1284,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 
 .floorNav {
-  position: absolute;
+  position: fixed;
   left: 8.5%;
   top: 165px;
   width: 190px;
@@ -1326,7 +1326,6 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 @media (max-width: 1500px) {
 .floorNav {
-  position: absolute;
   left: 4.5%;
   top: 125px;}
 .backTo {
