@@ -1378,6 +1378,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 .flatInfo {
   text-align: left;
+   color: #41495B;
 }
 .flatInfo h4 {
   font: 18px 'GaramondPremrPro';
@@ -1391,6 +1392,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 .flatInfo tr {
   height: 30px;
+  color: #41495B;
 }
 .flatInfo tr td {font-size: 18px;}
 .flatInfo thead td {font: 14px 'robotolight_italic' !important;}
