@@ -31,8 +31,10 @@ jQuery(document).ready(function($) {
       }
   });
 
+
 var houseSec = $('.houseSection, .flatSection, .floorSection');
 
+/* house svg click */
 $(document).on('click', 'g.floor', function() {
   $('.houseSection').removeClass('current');
   var number = $(this).data('floor');
@@ -41,11 +43,13 @@ $(document).on('click', 'g.floor', function() {
   $('.floorNav span[data-floor="' + number + '"]').addClass('active');
 });
 
+/* floor svg click */
 $(document).on('click', '.flatBlock', function() {
   $(houseSec).removeClass('current');
   $('.flatSection').addClass('current');
 });
 
+/* floor navigation click */
 $('.floorNav span').click(function() {
   $(houseSec).removeClass('current');
   $('.floorNav span').removeClass('active');
