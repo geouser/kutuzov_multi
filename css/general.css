@@ -189,8 +189,8 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-content: center;
-   align-content: center;
+  -webkit-align-items: center;
+   align-items: center;
 }
 
 
@@ -1212,12 +1212,11 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .flatSection {
   left: 100%;
   top: 0;
-  background-color: chocolate;
+  padding-top: 85px;
 }
 .floorSection {
   top: 100%;
   left: 0;
-  background-color: peru;
 }
 
 .floorSection.current,
@@ -1335,12 +1334,78 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   background-image: url("../images/floorNavBg.png");
 }
 
+@media (max-width: 1500px) {
+.floorNav {
+  position: absolute;
+  left: 4.5%;
+  top: 125px;}
+.backTo {
+  width: 175px;
+  right: 6%;
+  top: 120px;
+  font-size: 16px;
+}
+.backTo img {
+  margin: 0px auto 15px;}
+.flatsNav {
+  left: 4.5%;
+  bottom: 55px;
+}
+}
+
+
+
 
 
 .flatBlock {
   width: 40%;
-  margin: auto;
+  max-height: 75%;
+  position: relative;
 }
-.flatInfo, .flatInfo th {
+.flatBlock img {
+  width: 100%;
+}
+.flatBlock  svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.flatInfo {
+  position: absolute;
+  right: 10px;
+  bottom: 20%;  
+}
+.flatInfo {
   text-align: left;
+}
+.flatInfo thead {
+  height: 35px;
+  border-top: 1px solid #C6C3BE;
+   border-bottom: 1px solid #C6C3BE;
+}
+.flatInfo tr {
+  height: 30px;
+}
+.flatInfo tr td {font-size: 18px;}
+.flatInfo thead td {font-size: 14px;}
+.flatInfo tr td:nth-child(1) {
+  width: 90px;
+}
+.flatInfo tr td:nth-child(2) {
+  width: 120px;
+}
+.flatInfo tr td:nth-child(3) {
+  font-style: italic;
+}
+
+@media (max-width: 1500px) {
+    .flatInfo tr td:nth-child(1) {
+    width: 70px;
+    }
+  .flatInfo tr td:nth-child(2) {
+    width: 100px;
+    }
+    .flatInfo tr td {font-size: 16px;}
+  .flatInfo thead td {font-size: 13px;}
 }
