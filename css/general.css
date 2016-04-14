@@ -1141,3 +1141,24 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .mobile .property {
   display: none;
 }
+
+
+
+
+
+/*flats*/
+.house_map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  
+}
+.house_map img {
+  height: 100%;
+  width: auto;
+}
