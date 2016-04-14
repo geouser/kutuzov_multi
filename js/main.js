@@ -22,6 +22,11 @@ if (window.params.isMobile) {
 
 jQuery(document).ready(function($) {
 
+$('.houseSection, .floorSection, .flatSection').click(function(){
+  $(this).removeClass('current');
+  $(this).next().addClass('current');
+});
+
 $('.addInfo, .property').css('opacity', '1')
 
   $('.menu-button').on('click', function(ev) {
