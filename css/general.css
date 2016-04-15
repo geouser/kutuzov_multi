@@ -1746,3 +1746,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
     top: 150px;
     bottom: auto;
   }
+
+@media (max-width: 1500px) {
+.viewingTable .flatsNav {top: 100px;}
+}
