@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
   });
 
 
-var houseSec = $('.houseSection, .flatSection, .floorSection');
+var houseSec = $('.houseSection, .flatSection, .floorSection, .flatsTable');
 
 
 /* house svg click */
