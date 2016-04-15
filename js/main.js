@@ -100,6 +100,8 @@ $('.backToFloor').click(function() {
 });
 
 
+
+
 /* change backTo block ( toFloor or toHouse ) */
 $(document).click(function () {
 if ($('.floorSection').hasClass('current')) {
@@ -112,7 +114,15 @@ if ($('.floorSection').hasClass('current')) {
 else if ($('.flatsTable').hasClass('current')) {
   $('body').removeClass('viewingFloor');
   $('body').removeClass('viewingFlat');
-  $('body').addClass('viewingTable');    
+  $('body').addClass('viewingTable'); 
+  $('.viewingTable .backToFloor').click(function() {
+      $(houseSec).removeClass('current');
+      $('.floorSection[data-num="1"]').addClass('current');
+      $('body').removeClass('viewingFlat');
+      $('body').removeClass('viewingTable');
+      $('.flatsNav span').removeClass('active');
+      $('.flatsNav span:nth-child(1)').addClass('active');
+  });   
 }
 else {
   $('body').removeClass('viewingFloor');
@@ -143,9 +153,6 @@ $('.flatsNav span:nth-child(2)').click(function () {
   $('.flatsTable').addClass('current');
   $('.floorNav span').removeClass('active');
 });
-
-
-
 
 
 $('.addInfo, .property').css('opacity', '1')
