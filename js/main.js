@@ -31,6 +31,14 @@ jQuery(document).ready(function($) {
       }
   });
 
+  $.ajax({
+      url : "images/floor-1.svg",
+      dataType: "text",
+      success : function (data) {
+          $(".floorPlan").html(data);
+      }
+  });
+
 
 var houseSec = $('.houseSection, .flatSection, .floorSection');
 
@@ -44,9 +52,10 @@ $(document).on('click', 'g.floor', function() {
 });
 
 /* floor svg click */
-$(document).on('click', '.flatBlock', function() {
+$(document).on('click', '.floorPlan  polygon', function() {
   $(houseSec).removeClass('current');
-  $('.flatSection').addClass('current');
+  var number = $(this).data('flat');
+  $('.flatSection[data-num="' + number + '"]').addClass('current');
 });
 
 /* floor navigation click */
@@ -66,7 +75,7 @@ $('.backToHouse').click(function() {
 
 $('.backToFloor').click(function() {
   $(houseSec).removeClass('current');
-  var number = $(this).parent().data('num');
+  var number = $(this).parent().data('floor');
   $('.floorSection[data-num="' + number + '"]').addClass('current');
 });
 

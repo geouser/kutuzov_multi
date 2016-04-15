@@ -1245,8 +1245,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   position: absolute;
   right: 12%;
   top: 150px;
-  font-family: 'roboto_condensedlight';
-  font-style: italic;
+  font-family: 'robotolight_italic';
   font-size: 18px;
   color: #41495B;
 }
@@ -1354,7 +1353,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   width: 175px;
   right: 6%;
   top: 120px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .backTo img {
   margin: 0px auto 15px;}
@@ -1373,19 +1372,17 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 
 
-.flatBlock {
+.flatsBlock {
   width: 40%;
   max-height: 75%;
   position: relative;
 }
-.flatBlock img {
+.flatsBlock img {
   width: 100%;
 }
-.flatBlock  svg {
-  position: absolute;
-  left: 0;
-  top: 0;
+.flatsBlock  svg {
   width: 100%;
+  height: auto;
 }
 .flatInfo {
   position: absolute;
@@ -1434,3 +1431,19 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
     .flatInfo tr td {font-size: 16px;}
   .flatInfo thead td {font-size: 13px;}
 }
+
+
+  polygon {
+  -webkit-transition: all .1s;
+     -moz-transition: all .1s;
+      -ms-transition: all .1s;
+       -o-transition: all .1s;
+          transition: all .1s;
+  }
+  .flatsBlock polygon {
+    opacity: 0;
+    cursor: pointer;
+  }
+  .flatsBlock polygon:hover {
+    opacity: .8;
+  }
