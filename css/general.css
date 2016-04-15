@@ -1400,7 +1400,182 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   }
 }
 /*flat*/
-
+/*rooms list*/
+.rooms-list {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    word-spacing: normal;
+    font-family: 'GaramondPremrPro';
+}
+.rooms-list thead {
+    background: rgba( 223, 210, 193, 0.8)
+}
+.rooms-list thead td[rowspan="2"] {
+    vertical-align: middle;
+    line-height: 1
+}
+.rooms-list thead tr td,
+.rooms-list thead tr,
+.rooms-list tbody tr td,
+.rooms-list tbody tr {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba( 59, 67, 83, 0.5)
+}
+.rooms-list thead tr {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3b4353;
+    font-weight: bolder
+}
+.rooms-list thead tr:first-child td {
+    border-width: 2px
+}
+.rooms-list thead tr:last-child td {
+    border-width: 0 2px 0 0
+}
+.rooms-list tr td:first-child {
+    border-left: none
+}
+.rooms-list tr td:last-child {
+    border-right: none
+}
+.rooms-list tr {
+    cursor: pointer
+}
+.rooms-list tr:hover td {
+    background: rgba( 223, 210, 193, 0.2)
+}
+.rooms-list thead tr.throw-1 td:nth-child(1) {
+    width: 10%
+}
+.rooms-list thead tr.throw-1 td:nth-child(2) {
+    width: 13%
+}
+.rooms-list thead tr.throw-1 td:nth-child(3) {
+    width: 7%
+}
+.rooms-list thead tr.throw-1 td:nth-child(4) {
+    width: 7%
+}
+.rooms-list thead tr.throw-1 td:nth-child(5) {
+    width: 7%
+}
+.rooms-list thead tr.throw-1 td:nth-child(6) {
+    width: 30%
+}
+.rooms-list thead tr.throw-1 td:nth-child(7) {
+    width: 8%
+}
+.rooms-list thead tr.throw-1 td:nth-child(8) {
+    width: 8%
+}
+.rooms-list thead tr.throw-2 td.lb {
+    border-width: 0 2px 2px 0;
+    width: 5%
+}
+.rooms-list tbody tr:first-child td {
+    border-width: 0 1px 1px 1px
+}
+.rooms-list tbody tr td,
+.rooms-list tbody tr {
+    position: relative
+}
+.rooms-list tbody tr,
+.rooms-list tbody tr td {
+    height: 40px;
+    text-align: center
+}
+.rooms-list tbody tr.history {
+    background: rgba( 140, 120, 91, 0.1)
+}
+.rooms-list tbody tr .room-info-tooltip {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    width: 300px;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 1px;
+    padding: 5px;
+    border: 1px solid #666666;
+    box-shadow: 1px 2px 3px #999999
+}
+.rooms-list tbody tr .room-info-tooltip img {
+    max-width: 100%
+}
+.rooms-list tbody tr .room-info-tooltip div {
+    border: 2px solid #D6B694;
+    padding: 5px;
+    text-align: center
+}
+.rooms-list tbody tr .room-info-tooltip p {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 25%;
+    padding: 10px 20px;
+    background: rgba( 255, 255, 255, 0.7);
+    z-index: 5;
+    font-size: 1.1em;
+    font-style: italic
+}
+.rooms-list tbody tr .room-info-tooltip::before,
+.rooms-list tbody tr .room-info-tooltip::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #666666
+}
+.rooms-list tbody tr .room-info-tooltip::after {
+    border-top: 10px solid white;
+    bottom: -19px
+}
+.rooms-list tbody tr:hover .room-info-tooltip {
+    display: block
+}
+.rooms-list tbody tr .sold {
+    display: none;
+}
+.rooms-list tbody tr[data-sold="2"],
+.rooms-list tbody tr[data-sold="1"] {
+    background: rgba(255, 0, 0, 0.1);
+}
+.rooms-list tbody tr[data-sold="2"] .sold,
+.rooms-list tbody tr[data-sold="1"] .sold {
+    display: block;
+}
+.rooms-list tbody tr[data-sold="2"] .sold:after,
+.rooms-list tbody tr[data-sold="1"] .sold:after {
+    content: 'Продано';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: red;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.rooms-list tbody tr[data-sold="2"] .sold:after {
+    content: 'Бронь';
+}
+.rooms-list tbody tr,
+.rooms-list tbody tr td {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+/*rooms list*/
 
 
 .floorNav {
