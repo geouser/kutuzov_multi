@@ -1249,11 +1249,11 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 
 .backTo {
-  width: 195px;
+  width: 200px;
   text-align: center;
   cursor: pointer;
   position: fixed;
-  right: 12%;
+  right: 6%;
   top: 150px;
   font-family: 'robotolight_italic';
   font-size: 18px;
@@ -1342,14 +1342,14 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .flatInfo--flat {
   width: 320px;
   position: absolute;
-  bottom: 50px;
+  bottom: 120px;
   left: 105%;
   text-align: left;
 }
 .flatLabel {
   position: absolute;
   text-align: right;
-  bottom: 50px;
+  bottom: 120px;
   right: 105%;
   text-transform: uppercase;
   font-size: 30px;
@@ -1387,7 +1387,6 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   }
   .flatPlan {
     height: 500px;
-    padding-top: 50px;
   }
 }
 /*flat*/
@@ -1466,6 +1465,12 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   width: 40%;
   max-height: 75%;
   position: relative;
+}
+.flatSection {
+  padding-top: 85px;
+} 
+.flatSection .flatsBlock  {
+  width: 48%;
 }
 .flatsBlock img {
   width: 100%;
