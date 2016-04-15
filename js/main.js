@@ -39,6 +39,14 @@ jQuery(document).ready(function($) {
       }
   });
 
+  $.ajax({
+      url : "table.txt",
+      dataType: "text",
+      success : function (data) {
+          $(".tableBlock").html(data);
+      }
+  });
+
 
 var houseSec = $('.houseSection, .flatSection, .floorSection');
 
