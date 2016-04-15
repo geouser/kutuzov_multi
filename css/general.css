@@ -1232,9 +1232,14 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   background-repeat: no-repeat;
   background-position: 14% 60%;
 }
+.flatsTable {
+  top: 100%;
+  left:0;
+}
 
 .floorSection.current,
-.houseSection.current {
+.houseSection.current,
+.flatsTable.curent {
   top: 0 !important;
   left: 0 !important;
 }
@@ -1292,6 +1297,11 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   bottom: 55px;
   width: 310px;
   z-index: 10;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
 }
 .flatsNav span {
   display: block;
@@ -1541,4 +1551,12 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   }
   .flatsBlock polygon:hover {
     opacity: .8;
+  }
+
+.viewingTable .floorNav {
+    display: none;
+  }
+
+.viewingTable .flatsNav {
+    top: 150px;
   }

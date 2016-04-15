@@ -74,6 +74,7 @@ $('.backToHouse').click(function() {
   $('.floorNav span').removeClass('active');
   $(houseSec).removeClass('current');
   $('.houseSection').addClass('current');
+  $('.flatsTable').removeClass('current');
 });
 
 
@@ -82,6 +83,7 @@ $('.backToFloor').click(function() {
   $(houseSec).removeClass('current');
   $('.floorSection[data-num="' + number + '"]').addClass('current');
   $('body').removeClass('viewingFlat');
+  $('body').removeClass('viewingTable');
 });
 
 /* change backTo ( to floor or to house ) */
@@ -91,10 +93,17 @@ if ($('.floorSection').hasClass('current')) {
 } else if ($('.flatSection').hasClass('current')) {
   $('body').removeClass('viewingFloor');
   $('body').addClass('viewingFlat');  
+  $('body').removeClass('viewingTable');  
+}
+else if ($('.flatsTable').hasClass('current')) {
+  $('body').removeClass('viewingFloor');
+  $('body').removeClass('viewingFlat');
+  $('body').addClass('viewingTable');    
 }
 else {
   $('body').removeClass('viewingFloor');
   $('body').removeClass('viewingFlat');
+  $('body').removeClass('viewingTable');  
 }
 });
 
@@ -103,6 +112,7 @@ $('.flatsNav span').click(function () {
   $('.flatsNav span').removeClass('active');
   $(this).addClass('active');
   $('body').removeClass('viewingFlat');
+  $('body').removeClass('viewingTable');
 });
 
 $('.flatsNav span:nth-child(1)').click(function () {
@@ -111,6 +121,13 @@ $('.flatsNav span:nth-child(1)').click(function () {
   $('.floorNav span').removeClass('active');
   $('.floorNav span:nth-child(1)').addClass('active');
 });
+
+$('.flatsNav span:nth-child(2)').click(function () {
+  $(houseSec).removeClass('current');
+  $('.flatsTable').addClass('current');
+  $('.floorNav span').removeClass('active');
+});
+
 
 
 
