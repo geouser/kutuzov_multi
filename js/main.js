@@ -50,6 +50,7 @@ jQuery(document).ready(function($) {
 
 var houseSec = $('.houseSection, .flatSection, .floorSection');
 
+
 /* house svg click */
 $(document).on('click', 'g.floor', function() {
   $('.houseSection').removeClass('current');
@@ -67,7 +68,8 @@ $(document).on('click', '.floorPlan  polygon', function() {
   $('.flatSection[data-floor="' + floorNumber + '"][data-num="' + number + '"]').addClass('current');
 });
 
-/* floor navigation click */
+
+/* floor navigation click (1,2,3)*/
 $('.floorNav span').click(function() {
   $(houseSec).removeClass('current');
  $('.floorNav span').removeClass('active');
@@ -78,6 +80,8 @@ $('.floorNav span').click(function() {
 });
 
 
+
+/* backToHouse */
 $('.backToHouse').click(function() {
   $('.floorNav span').removeClass('active');
   $(houseSec).removeClass('current');
@@ -86,6 +90,7 @@ $('.backToHouse').click(function() {
 });
 
 
+/* backToFloor */
 $('.backToFloor').click(function() {
   var number = $('.current').data('floor');
   $(houseSec).removeClass('current');
@@ -94,7 +99,8 @@ $('.backToFloor').click(function() {
   $('body').removeClass('viewingTable');
 });
 
-/* change backTo ( to floor or to house ) */
+
+/* change backTo block ( toFloor or toHouse ) */
 $(document).click(function () {
 if ($('.floorSection').hasClass('current')) {
   $('body').addClass('viewingFloor');
@@ -116,6 +122,8 @@ else {
 });
 
 
+
+/* flats navigation (on the left bottom) ) */
 $('.flatsNav span').click(function () {
   $('.flatsNav span').removeClass('active');
   $(this).addClass('active');
