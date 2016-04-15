@@ -56,8 +56,6 @@ $(document).on('click', '.floorPlan  polygon', function() {
   $(houseSec).removeClass('current');
   var floorNumber = $(this).parents('.floorSection').data('num');
   var number = $(this).data('flat');
-  console.log(floorNumber);
-  console.log(number);
   $('.flatSection[data-floor="' + floorNumber + '"][data-num="' + number + '"]').addClass('current');
 });
 
@@ -77,9 +75,24 @@ $('.backToHouse').click(function() {
 });
 
 $('.backToFloor').click(function() {
+  var number = $('.current').data('floor');
   $(houseSec).removeClass('current');
-  var number = $(this).parent().data('floor');
   $('.floorSection[data-num="' + number + '"]').addClass('current');
+  $('body').removeClass('viewingFlat');
+});
+
+/* change backTo ( to floor or to house ) */
+$(document).click(function () {
+if ($('.floorSection').hasClass('current')) {
+  $('body').addClass('viewingFloor');
+} else if ($('.flatSection').hasClass('current')) {
+  $('body').removeClass('viewingFloor');
+  $('body').addClass('viewingFlat');  
+}
+else {
+  $('body').removeClass('viewingFloor');
+  $('body').removeClass('viewingFlat');
+}
 });
 
 
