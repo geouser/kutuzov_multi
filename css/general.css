@@ -1171,7 +1171,15 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   display: none;
 }
 
-
+#flatsPage .logo {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .6s;
+     -moz-transition: opacity .6s;
+      -ms-transition: opacity .6s;
+       -o-transition: opacity .6s;
+          transition: opacity .6s;
+}
 
 /*house*/
 .houseMap {
@@ -1294,6 +1302,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .flatsNav {
   position: fixed;
   left: 8.5%;
+  top: auto;
   bottom: 55px;
   width: 310px;
   z-index: 10;
@@ -1753,7 +1762,10 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
     top: 150px;
     bottom: auto;
   }
-
+.viewingTable .logo {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
 @media (max-width: 1500px) {
 .viewingTable .flatsNav {top: 100px;}
 }
