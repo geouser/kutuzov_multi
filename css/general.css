@@ -55,6 +55,16 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'GaramondPremrPro-MedItCapt';
+  src: url('../fonts/subset-GaramondPremrPro-MedItCapt.eot');
+  src: url('../fonts/subset-GaramondPremrPro-MedItCapt.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/subset-GaramondPremrPro-MedItCapt.woff') format('woff'),
+       url('../fonts/subset-GaramondPremrPro-MedItCapt.ttf') format('truetype'),
+       url('../fonts/subset-GaramondPremrPro-MedItCapt.svg#GaramondPremrPro-MedItCapt') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
 
 @font-face {
   font-family:'GaramondPremrPro';
