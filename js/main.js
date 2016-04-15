@@ -66,6 +66,7 @@ $('.floorNav span').click(function() {
   $(this).addClass('active');
   var number = $(this).data('floor');
   $('.floorSection[data-num="' + number + '"]').addClass('current');
+  $('body').removeClass('viewingFlat');
 });
 
 
