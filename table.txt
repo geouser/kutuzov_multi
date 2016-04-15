@@ -1,0 +1,1052 @@
+
+				&nbsp;
+		<table class="rooms-list">
+			<thead>
+				
+				<tr class="throw-1">
+					<td rowspan="2">№</td>
+					<td rowspan="2">Тип</td>
+					<td rowspan="2">№ <br>парадной</td>
+					<td rowspan="2">Этаж</td>
+					<td rowspan="2">Кол-во <br>спален</td>
+					<td colspan="5">Площадь По этажам</td>
+					<td rowspan="2">Площадь балконов и террас с коэфф. (кв.м.)</td>
+					<td rowspan="2">Общая площадь (кв.м.)</td>
+				</tr>
+				<tr class="throw-2">
+					<td class="lb">1</td>
+					<td class="lb">2</td>
+					<td class="lb">3</td>
+					<td class="lb">4</td>
+					<td class="lb">мезонин</td>
+				</tr>
+				
+			</thead>
+			<tbody>
+									
+					<tr data-sold="2" data-floor="1" id="room-1" class="history room_select">
+						
+						<td>1</td>
+						<td>Историческая квартира</td>
+						
+						<td> I</td>
+						
+						<td>
+							1-2    
+															<div class="room-info-tooltip">
+									<div>
+										<img src="/upload/kvartirografiya/rooms/1.jpg">
+									</div>
+									<p>Историческая квартира №1</p>
+								</div>      
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							&nbsp;						</td>
+						
+													<td>
+								95,1							</td>
+													<td>
+								397,9							</td>
+													<td>
+															</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td>1,8</td>
+
+						<td>
+							494,8						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="3" id="room-2" class="room_select">
+						
+						<td>2</td>
+						<td>Квартира</td>
+						
+						<td> I</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3-4						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								281,0							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							281,0						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-3';" data-floor="3" id="room-3" class="room_select">
+						
+						<td>3</td>
+						<td>Квартира</td>
+						
+						<td> I</td>
+						
+						<td>
+							3-4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2-3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								129,2							</td>
+													<td>
+								104,4							</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							233,6						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="4" id="room-4" class="room_select">
+						
+						<td>4</td>
+						<td>Квартира</td>
+						
+						<td> I</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								161,5							</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							161,5						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-5';" data-floor="4" id="room-5" class="room_select">
+						
+						<td>5</td>
+						<td>Квартира</td>
+						
+						<td> I</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								177,5							</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							177,5						</td>
+
+					</tr>
+									
+					<tr data-sold="2" data-floor="2" id="room-6" class="history room_select">
+						
+						<td>6</td>
+						<td>Историческая квартира</td>
+						
+						<td> II</td>
+						
+						<td>
+							2    
+															<div class="room-info-tooltip">
+									<div>
+										<img src="/upload/kvartirografiya/rooms/7.jpg">
+									</div>
+									<p>Историческая квартира №6</p>
+								</div>      
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							&nbsp;						</td>
+						
+													<td>
+															</td>
+													<td>
+								382,7							</td>
+													<td>
+															</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							382,7						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-7';" data-floor="3" id="room-7" class="room_select">
+						
+						<td>7</td>
+						<td>Квартира</td>
+						
+						<td> II</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2-3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								214,2							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							214,2						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-8';" data-floor="3" id="room-8" class="room_select">
+						
+						<td>8</td>
+						<td>Квартира</td>
+						
+						<td> II</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								155,0							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							155,0						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-9';" data-floor="4" id="room-9" class="room_select">
+						
+						<td>9</td>
+						<td>Квартира</td>
+						
+						<td> II</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								179,2							</td>
+												
+						<td>
+													</td>
+						
+						<td>1,5</td>
+
+						<td>
+							180,7						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-10';" data-floor="4" id="room-10" class="room_select">
+						
+						<td>10</td>
+						<td>Квартира</td>
+						
+						<td> II</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								162,6							</td>
+												
+						<td>
+													</td>
+						
+						<td>5,1</td>
+
+						<td>
+							167,7						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-11';" data-floor="1" id="room-11" class="room_select">
+						
+						<td>11</td>
+						<td>Квартира-Таунхаус</td>
+						
+						<td> III</td>
+						
+						<td>
+							1-3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3-4						</td>
+						
+													<td>
+								33,6							</td>
+													<td>
+								155,8							</td>
+													<td>
+								90,6							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td>1,1</td>
+
+						<td>
+							281,1						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="2" id="room-12" class="room_select">
+						
+						<td>12</td>
+						<td>Квартира</td>
+						
+						<td> III</td>
+						
+						<td>
+							2    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							1						</td>
+						
+													<td>
+															</td>
+													<td>
+								66,3							</td>
+													<td>
+															</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td>2,5</td>
+
+						<td>
+							68,8						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-13';" data-floor="3" id="room-13" class="room_select">
+						
+						<td>13</td>
+						<td>Квартира</td>
+						
+						<td> III</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							&nbsp;						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								65,6							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							65,6						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-14';" data-floor="4" id="room-14" class="room_select">
+						
+						<td>14</td>
+						<td>Квартира</td>
+						
+						<td> III</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							1						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								71,5							</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							71,5						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="4" id="room-15" class="room_select">
+						
+						<td>15</td>
+						<td>Квартира</td>
+						
+						<td> III</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							1						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								57,4							</td>
+												
+						<td>
+													</td>
+						
+						<td>4,6</td>
+
+						<td>
+							62,0						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-16';" data-floor="3" id="room-16" class="history room_select">
+						
+						<td>16</td>
+						<td>Лофт квартира</td>
+						
+						<td> IV</td>
+						
+						<td>
+							3-4    
+															<div class="room-info-tooltip">
+									<div>
+										<img src="/upload/kvartirografiya/rooms/25.jpg">
+									</div>
+									<p>Лофт квартира №16</p>
+								</div>      
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								206,6							</td>
+													<td>
+								171,5							</td>
+												
+						<td>
+							5.0						</td>
+						
+						<td>72,4</td>
+
+						<td>
+							455,5						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-17';" data-floor="3" id="room-17" class="history room_select">
+						
+						<td>17</td>
+						<td>Лофт квартира</td>
+						
+						<td> V</td>
+						
+						<td>
+							3-4    
+															<div class="room-info-tooltip">
+									<div>
+										<img src="/upload/kvartirografiya/rooms/27.jpg">
+									</div>
+									<p>Лофт-квартира с автомобильным лифтом</p>
+								</div>      
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								219,2							</td>
+													<td>
+								158,2							</td>
+												
+						<td>
+							5.0						</td>
+						
+						<td>74,56</td>
+
+						<td>
+							457,0						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-18';" data-floor="3" id="room-18" class="history room_select">
+						
+						<td>18</td>
+						<td>Лофт квартира</td>
+						
+						<td> V</td>
+						
+						<td>
+							3-4    
+															<div class="room-info-tooltip">
+									<div>
+										<img src="/upload/kvartirografiya/rooms/26.jpg">
+									</div>
+									<p>Лофт-квартира с автомобильным лифтом</p>
+								</div>      
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								180,7							</td>
+													<td>
+								149,4							</td>
+												
+						<td>
+							5.0						</td>
+						
+						<td>76,4</td>
+
+						<td>
+							411,5						</td>
+
+					</tr>
+									
+					<tr data-sold="2" data-floor="2" id="room-19" class="history room_select">
+						
+						<td>19</td>
+						<td>Историческая квартира</td>
+						
+						<td> VI</td>
+						
+						<td>
+							2    
+															<div class="room-info-tooltip">
+									<div>
+										<img src="/upload/kvartirografiya/rooms/4.jpg">
+									</div>
+									<p>Историческая квартира №19</p>
+								</div>      
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							&nbsp;						</td>
+						
+													<td>
+															</td>
+													<td>
+								366,4							</td>
+													<td>
+															</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td>7,1</td>
+
+						<td>
+							373,5						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-20';" data-floor="3" id="room-20" class="room_select">
+						
+						<td>20</td>
+						<td>Квартира</td>
+						
+						<td> VI</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							1						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								87,1							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							87,1						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-21';" data-floor="3" id="room-21" class="room_select">
+						
+						<td>21</td>
+						<td>Квартира</td>
+						
+						<td> VI</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								226,1							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							226,1						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="4" id="room-22" class="room_select">
+						
+						<td>22</td>
+						<td>Квартира</td>
+						
+						<td> VI</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							1						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								88,9							</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							88,9						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-23';" data-floor="4" id="room-23" class="room_select">
+						
+						<td>23</td>
+						<td>Квартира</td>
+						
+						<td> VI</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								177,0							</td>
+												
+						<td>
+													</td>
+						
+						<td>18,0</td>
+
+						<td>
+							195,0						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="2" id="room-24" class="room_select">
+						
+						<td>24</td>
+						<td>Квартира</td>
+						
+						<td> VII</td>
+						
+						<td>
+							2    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							3						</td>
+						
+													<td>
+															</td>
+													<td>
+								182,2							</td>
+													<td>
+															</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td>3,8</td>
+
+						<td>
+							186,0						</td>
+
+					</tr>
+									
+					<tr data-sold="1" data-floor="2" id="room-25" class="room_select">
+						
+						<td>25</td>
+						<td>Квартира</td>
+						
+						<td> VII</td>
+						
+						<td>
+							2    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2-3						</td>
+						
+													<td>
+															</td>
+													<td>
+								181,0							</td>
+													<td>
+															</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							181,0						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-26';" data-floor="3" id="room-26" class="room_select">
+						
+						<td>26</td>
+						<td>Квартира</td>
+						
+						<td> VII</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2-3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								175,8							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							175,8						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-27';" data-floor="3" id="room-27" class="room_select">
+						
+						<td>27</td>
+						<td>Квартира</td>
+						
+						<td> VII</td>
+						
+						<td>
+							3    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2-3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								186,8							</td>
+													<td>
+															</td>
+												
+						<td>
+													</td>
+						
+						<td></td>
+
+						<td>
+							186,8						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-28';" data-floor="4" id="room-28" class="room_select">
+						
+						<td>28</td>
+						<td>Квартира</td>
+						
+						<td> VII</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							1-2						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								94,5							</td>
+												
+						<td>
+													</td>
+						
+						<td>14,9</td>
+
+						<td>
+							109,4						</td>
+
+					</tr>
+									
+					<tr onclick="window.location.href='/kvartirografiya/rooms/n-29';" data-floor="4" id="room-29" class="room_select">
+						
+						<td>29</td>
+						<td>Квартира</td>
+						
+						<td> VII</td>
+						
+						<td>
+							4    
+														<div class="sold"></div>  
+						</td>            
+						
+						<td>
+							2-3						</td>
+						
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+															</td>
+													<td>
+								172,9							</td>
+												
+						<td>
+													</td>
+						
+						<td>5,5</td>
+
+						<td>
+							178,4						</td>
+
+					</tr>
+							</tbody>
+			
+		</table>
+		
+	
