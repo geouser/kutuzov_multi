@@ -57,6 +57,7 @@ $(document).on('click', '.floorPlan  polygon', function() {
   var floorNumber = $(this).parents('.floorSection').data('num');
   var number = $(this).data('flat');
   console.log(floorNumber);
+  console.log(number);
   $('.flatSection[data-floor="' + floorNumber + '"][data-num="' + number + '"]').addClass('current');
 });
 
