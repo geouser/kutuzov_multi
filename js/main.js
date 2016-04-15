@@ -62,7 +62,7 @@ $(document).on('click', '.floorPlan  polygon', function() {
 /* floor navigation click */
 $('.floorNav span').click(function() {
   $(houseSec).removeClass('current');
-  $('.floorNav span').removeClass('active');
+ $('.floorNav span').removeClass('active');
   $(this).addClass('active');
   var number = $(this).data('floor');
   $('.floorSection[data-num="' + number + '"]').addClass('current');
@@ -71,9 +71,11 @@ $('.floorNav span').click(function() {
 
 
 $('.backToHouse').click(function() {
+  $('.floorNav span').removeClass('active');
   $(houseSec).removeClass('current');
   $('.houseSection').addClass('current');
 });
+
 
 $('.backToFloor').click(function() {
   var number = $('.current').data('floor');
@@ -96,6 +98,19 @@ else {
 }
 });
 
+
+$('.flatsNav span').click(function () {
+  $('.flatsNav span').removeClass('active');
+  $(this).addClass('active');
+  $('body').removeClass('viewingFlat');
+});
+
+$('.flatsNav span:nth-child(1)').click(function () {
+  $(houseSec).removeClass('current');
+  $('.floorSection[data-num="1"]').addClass('current');
+  $('.floorNav span').removeClass('active');
+  $('.floorNav span:nth-child(1)').addClass('active');
+});
 
 
 

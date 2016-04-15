@@ -386,7 +386,7 @@ section {
   z-index: -1;
 }
 .photo_preview {
-  position: fixed;
+  position: absolute;
   bottom: 60px;
   right: 60px;
   border: 5px solid rgba(255, 255, 255, .5);
