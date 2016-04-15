@@ -1239,7 +1239,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 .floorSection.current,
 .houseSection.current,
-.flatsTable.curent {
+.flatsTable.current {
   top: 0 !important;
   left: 0 !important;
 }
@@ -1559,4 +1559,5 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 
 .viewingTable .flatsNav {
     top: 150px;
+    bottom: auto;
   }
