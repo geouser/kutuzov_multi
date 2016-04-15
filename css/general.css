@@ -1401,15 +1401,25 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 }
 /*flat*/
 /*rooms list*/
+.flatsTable {
+  padding-top: 300px;
+}
+.tableBlock {
+  width: 1110px;
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
 .rooms-list {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     word-spacing: normal;
     font-family: 'GaramondPremrPro';
+    border: 10px solid rgba(255, 255, 255, .8);
 }
 .rooms-list thead {
-    background: rgba( 223, 210, 193, 0.8)
+    background: rgba( 223, 210, 193, 0.8);
 }
 .rooms-list thead td[rowspan="2"] {
     vertical-align: middle;
