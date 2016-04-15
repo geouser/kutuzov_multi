@@ -54,8 +54,10 @@ $(document).on('click', 'g.floor', function() {
 /* floor svg click */
 $(document).on('click', '.floorPlan  polygon', function() {
   $(houseSec).removeClass('current');
+  var floorNumber = $(this).parents('.floorSection').data('num');
   var number = $(this).data('flat');
-  $('.flatSection[data-num="' + number + '"]').addClass('current');
+  console.log(floorNumber);
+  $('.flatSection[data-floor="' + floorNumber + '"][data-num="' + number + '"]').addClass('current');
 });
 
 /* floor navigation click */
