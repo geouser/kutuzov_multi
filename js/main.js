@@ -82,6 +82,19 @@ $('.backToFloor').click(function() {
   $('.floorSection[data-num="' + number + '"]').addClass('current');
 });
 
+/* change backTo ( to floor or to house ) */
+$(document).click(function () {
+if ($('.floorSection').hasClass('current')) {
+  $('body').addClass('viewingFloor');
+} else if ($('.flatSection').hasClass('current')) {
+  $('body').removeClass('viewingFloor');
+  $('body').addClass('viewingFlat');  
+}
+else {
+  $('body').removeClass('viewingFloor');
+}
+});
+
 
 
 
