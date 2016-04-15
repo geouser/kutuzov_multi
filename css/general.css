@@ -1409,6 +1409,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   height: 100%;
   overflow-y: scroll;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .rooms-list {
     width: 100%;
@@ -1416,7 +1417,8 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
     border-spacing: 0;
     word-spacing: normal;
     font-family: 'GaramondPremrPro';
-    border: 10px solid rgba(255, 255, 255, .8);
+    outline: 10px solid rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .7);
 }
 .rooms-list thead {
     background: rgba( 223, 210, 193, 0.8);
