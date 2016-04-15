@@ -1288,12 +1288,12 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 .backTo img.arrowBackTo {
   margin-bottom: 10px;
 }
-.viewingFloor .backToHouse {
+.viewingFloor .backToHouse,
+.viewingTable .backToHouse {
   visibility: visible;
   opacity: 1;
 }
-.viewingFlat .backToFloor,
-.viewingTable .backToFloor {
+.viewingFlat .backToFloor {
   visibility: visible;
   opacity: 1;
 }
@@ -1770,4 +1770,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
 @media (max-width: 1500px) {
 .viewingTable .flatsNav {top: 100px;}
 .viewingTable .logo {width: 140px;}
+.viewingTable .backToHouse img:first-of-type {
+  display: none;
+}
 }

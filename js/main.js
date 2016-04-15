@@ -115,13 +115,11 @@ else if ($('.flatsTable').hasClass('current')) {
   $('body').removeClass('viewingFloor');
   $('body').removeClass('viewingFlat');
   $('body').addClass('viewingTable'); 
-  $('.viewingTable .backToFloor').click(function() {
+  $('.viewingTable .backToHouse').click(function() {
       $(houseSec).removeClass('current');
-      $('.floorSection[data-num="1"]').addClass('current');
-      $('body').removeClass('viewingFlat');
-      $('body').removeClass('viewingTable');
+      $('.houseSection').addClass('current');
+      $('.flatsTable').removeClass('current');
       $('.flatsNav span').removeClass('active');
-      $('.flatsNav span:nth-child(1)').addClass('active');
   });   
 }
 else {
