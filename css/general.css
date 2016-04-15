@@ -1324,7 +1324,7 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   display: block;
   text-align: center;
   cursor: pointer;
-  font: 24px/46px 'GaramondPremrPro';
+  font: 24px/46px 'GaramondPremrPro-SmbdIt';;
   background-size: 100% 100%;
   background-position: 50% 50%;
 }
