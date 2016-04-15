@@ -1347,7 +1347,6 @@ textarea:-ms-input-placeholder      {color:#000; opacity: 1;}
   background-position: 50% 50%;
 }
 .floorNav span.active {
-  font-family: 'GaramondPremrPro-Smbd';
   color: #FFF;
   background-image: url("../images/floorNavBg.png");
 }
